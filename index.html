@@ -2,16 +2,25 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>V.I.S.I.O.N. Drone Visuals</title>
+<title>V.I.S.I.O.N.</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
+
 <body>
+
+<div class="loader">
+<h1 class="logoIntro">V.I.S.I.O.N.</h1>
+</div>
+
 
 <header>
 
@@ -21,37 +30,33 @@
 
 <ul>
 
-<li><a href="#home">Home</a></li>
 <li><a href="#work">Work</a></li>
-<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
 
 </ul>
-
-<button id="contactBtn">Get in touch</button>
 
 </nav>
 
 </header>
 
 
-<section class="hero" id="home">
+
+<section class="hero">
 
 <video autoplay muted loop class="heroVideo">
-<source src="videos/hero-drone.mp4" type="video/mp4">
+<source src="videos/hero.mp4" type="video/mp4">
 </video>
 
 <div class="heroContent">
 
-<h1>V.I.S.I.O.N.</h1>
-
-<h2>Aerial Cinematography</h2>
+<h1>See The World Differently</h1>
 
 <p>
-Professional drone visuals that transform how people see your project.
+Cinematic aerial visuals for brands, real estate and visionary projects.
 </p>
 
-<button class="primaryBtn" onclick="scrollToWork()">View Drone Footage</button>
+<button onclick="scrollToWork()">Explore Work</button>
 
 </div>
 
@@ -61,25 +66,25 @@ Professional drone visuals that transform how people see your project.
 
 <section class="work" id="work">
 
-<h2>Drone Footage</h2>
+<h2>Drone Cinematics</h2>
 
-<p class="sectionIntro">
-A selection of cinematic aerial work.
-</p>
+<div class="gallery">
 
-<div class="videoGrid">
+<div class="videoCard">
+<video src="videos/drone1.mp4" muted loop></video>
+</div>
 
-<video controls>
-<source src="videos/drone1.mp4" type="video/mp4">
-</video>
+<div class="videoCard">
+<video src="videos/drone2.mp4" muted loop></video>
+</div>
 
-<video controls>
-<source src="videos/drone2.mp4" type="video/mp4">
-</video>
+<div class="videoCard">
+<video src="videos/drone3.mp4" muted loop></video>
+</div>
 
-<video controls>
-<source src="videos/drone3.mp4" type="video/mp4">
-</video>
+<div class="videoCard">
+<video src="videos/drone4.mp4" muted loop></video>
+</div>
 
 </div>
 
@@ -87,43 +92,15 @@ A selection of cinematic aerial work.
 
 
 
-<section class="services" id="services">
+<section class="about" id="about">
 
-<h2>Services</h2>
+<div class="aboutText">
 
-<div class="serviceGrid">
-
-<div class="card">
-
-<h3>Real Estate</h3>
+<h2>Elevating Perspective</h2>
 
 <p>
-High-end drone visuals that showcase properties from a unique perspective.
+V.I.S.I.O.N. delivers cinematic drone visuals designed to capture attention and reveal perspectives impossible from the ground.
 </p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Construction Monitoring</h3>
-
-<p>
-Track progress and document projects with aerial footage.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Brand & Promotion</h3>
-
-<p>
-Cinematic drone shots for marketing, tourism and social media.
-</p>
-
-</div>
 
 </div>
 
@@ -133,34 +110,18 @@ Cinematic drone shots for marketing, tourism and social media.
 
 <section class="contact" id="contact">
 
-<h2>Contact V.I.S.I.O.N.</h2>
+<h2>Let's Create Something</h2>
 
-<p>
-Interested in aerial visuals for your project? Let's talk.
-</p>
-
-<form>
-
-<input type="text" placeholder="Name">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Tell me about your project"></textarea>
-
-<button type="submit">Send message</button>
-
-</form>
+<button class="contactBtn">Get In Touch</button>
 
 </section>
 
 
-
 <footer>
 
-<p>© 2026 V.I.S.I.O.N. Drone Visuals</p>
+<p>© V.I.S.I.O.N. Drone Visuals</p>
 
 </footer>
-
 
 <script src="script.js"></script>
 
