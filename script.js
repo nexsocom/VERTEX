@@ -44,3 +44,13 @@ video.pause()
 })
 
 })
+
+
+// Smooth scroll voor contact knop
+document.querySelectorAll(".contactBtn, #contactBtn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
