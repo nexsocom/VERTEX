@@ -1,130 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V.I.S.I.O.N. Drone Visuals</title>
 
-<title>V.I.S.I.O.N.</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
+<!-- Loader -->
 <div class="loader">
-<h1 class="logoIntro">V.I.S.I.O.N.</h1>
+  <h1 class="logoIntro">V.I.S.I.O.N.</h1>
 </div>
 
-
+<!-- Navbar -->
 <header>
-
-<nav>
-
-<div class="logo">V.I.S.I.O.N.</div>
-
-<ul>
-
-<li><a href="#work">Work</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
+  <nav>
+    <div class="logo">V.I.S.I.O.N.</div>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-
-
+<!-- Hero -->
 <section class="hero">
+  <video autoplay muted loop class="heroVideo">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
 
-<video autoplay muted loop class="heroVideo">
-<source src="videos/hero.mp4" type="video/mp4">
-</video>
-
-<div class="heroContent">
-
-<h1>See The World Differently</h1>
-
-<p>
-Cinematic aerial visuals for brands, real estate and visionary projects.
-</p>
-
-<button onclick="scrollToWork()">Explore Work</button>
-
-</div>
-
+  <div class="heroContent">
+    <h1>V.I.S.I.O.N.</h1>
+    <p>Elevating perspectives with cinematic drone visuals</p>
+    <button class="scrollBtn">Explore Work</button>
+  </div>
 </section>
 
-
-
+<!-- Work Section -->
 <section class="work" id="work">
-
-<h2>Drone Cinematics</h2>
-
-<div class="gallery">
-
-<div class="videoCard">
-<video src="videos/drone1.mp4" muted loop></video>
-</div>
-
-<div class="videoCard">
-<video src="videos/drone2.mp4" muted loop></video>
-</div>
-
-<div class="videoCard">
-<video src="videos/drone3.mp4" muted loop></video>
-</div>
-
-<div class="videoCard">
-<video src="videos/drone4.mp4" muted loop></video>
-</div>
-
-</div>
-
+  <h2>Drone Cinematics</h2>
+  <div class="gallery">
+    <div class="videoCard"><video src="videos/drone1.mp4" muted loop></video></div>
+    <div class="videoCard"><video src="videos/drone2.mp4" muted loop></video></div>
+    <div class="videoCard"><video src="videos/drone3.mp4" muted loop></video></div>
+    <div class="videoCard"><video src="videos/drone4.mp4" muted loop></video></div>
+  </div>
 </section>
 
-
-
+<!-- About Section -->
 <section class="about" id="about">
-
-<div class="aboutText">
-
-<h2>Elevating Perspective</h2>
-
-<p>
-V.I.S.I.O.N. delivers cinematic drone visuals designed to capture attention and reveal perspectives impossible from the ground.
-</p>
-
-</div>
-
+  <div class="aboutText">
+    <h2>Elevating Perspective</h2>
+    <p>V.I.S.I.O.N. delivers cinematic drone visuals designed to capture attention and reveal perspectives impossible from the ground.</p>
+  </div>
 </section>
 
-
-
+<!-- Contact Section -->
 <section class="contact" id="contact">
-
-<h2>Let's Create Something</h2>
-
-<button class="contactBtn">Get In Touch</button>
-
+  <h2>Let's Create Something</h2>
+  <button class="contactBtn">Get In Touch</button>
 </section>
 
-
+<!-- Footer -->
 <footer>
-
-<p>© V.I.S.I.O.N. Drone Visuals</p>
-
+  <p>© 2026 V.I.S.I.O.N. Drone Visuals</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
