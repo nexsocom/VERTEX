@@ -1,56 +1,32 @@
-// loader animation
-
+// Loader
 window.addEventListener("load", function(){
+    setTimeout(function(){
+        document.querySelector(".loader").style.display="none";
+    },1500);
+});
 
-setTimeout(function(){
+// Scroll to work section
+document.querySelector(".scrollBtn").addEventListener("click", () => {
+    document.getElementById("work").scrollIntoView({behavior:"smooth"});
+});
 
-document.querySelector(".loader").style.display="none"
-
-},2000)
-
-})
-
-
-// scroll
-
-function scrollToWork(){
-
-document.getElementById("work").scrollIntoView({
-
-behavior:"smooth"
-
-})
-
-}
-
-
-
-// video hover autoplay
-
-const videos = document.querySelectorAll(".videoCard video")
-
-videos.forEach(video=>{
-
-video.addEventListener("mouseenter",()=>{
-
-video.play()
-
-})
-
-video.addEventListener("mouseleave",()=>{
-
-video.pause()
-
-})
-
-})
-
-
-// Smooth scroll voor contact knop
-document.querySelectorAll(".contactBtn, #contactBtn").forEach(btn => {
+// Scroll to contact
+document.querySelectorAll(".contactBtn").forEach(btn => {
     btn.addEventListener("click", () => {
-        document.getElementById("contact").scrollIntoView({
-            behavior: "smooth"
-        });
+        document.getElementById("contact").scrollIntoView({behavior:"smooth"});
     });
+});
+
+// Hero scroll animation (subtle parallax)
+window.addEventListener('scroll', () => {
+    const heroText = document.querySelector('.heroContent h1');
+    const scrollY = window.scrollY;
+    heroText.style.transform = `translateY(${scrollY * 0.3}px)`;
+    heroText.style.opacity = `${1 - scrollY / 800}`;
+});
+
+// Video hover play
+document.querySelectorAll(".videoCard video").forEach(video=>{
+    video.addEventListener("mouseenter",()=>{video.play()});
+    video.addEventListener("mouseleave",()=>{video.pause()});
 });
