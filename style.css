@@ -95,9 +95,19 @@ nav a:hover{
 .heroContent h1{
   font-family:'Cinzel', serif;
   font-size:100px;
-  color:rgba(255,255,255,0.15);
-  text-shadow:0 0 10px rgba(255,255,255,0.1);
-  backdrop-filter: blur(2px);
+  letter-spacing:10px;
+
+  /* iets helderder glas */
+  color:rgba(255,255,255,0.32);
+
+  /* subtiele highlight */
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.25),
+    0 0 18px rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+
   margin-bottom:20px;
 }
 .heroContent p{
