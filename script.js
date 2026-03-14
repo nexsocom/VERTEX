@@ -1,22 +1,46 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+// loader animation
 
-\f0\fs24 \cf0 function scrollToWork() \{\
-\
-document.getElementById("work").scrollIntoView(\{\
-behavior: "smooth"\
-\});\
-\
-\}\
-\
-document.getElementById("contactBtn").addEventListener("click", function()\{\
-\
-document.getElementById("contact").scrollIntoView(\{\
-behavior:"smooth"\
-\});\
-\
-\});}
+window.addEventListener("load", function(){
+
+setTimeout(function(){
+
+document.querySelector(".loader").style.display="none"
+
+},2000)
+
+})
+
+
+// scroll
+
+function scrollToWork(){
+
+document.getElementById("work").scrollIntoView({
+
+behavior:"smooth"
+
+})
+
+}
+
+
+
+// video hover autoplay
+
+const videos = document.querySelectorAll(".videoCard video")
+
+videos.forEach(video=>{
+
+video.addEventListener("mouseenter",()=>{
+
+video.play()
+
+})
+
+video.addEventListener("mouseleave",()=>{
+
+video.pause()
+
+})
+
+})
