@@ -282,11 +282,14 @@ gap:80px;
 /* VIDEO RECHTS */
 
 /* QUOTE VIDEO RECHTS - SIDE PANEL EFFECT */
+
 .quoteImage {
-  flex-shrink:0;       /* video behoudt zijn breedte */
-  width:45%;           /* groter dan eerst */
-  max-width:600px;
-  height:auto;
+  flex-shrink:0;
+  width:45%;
+  max-width:700px;
+
+  margin-right:-10%; /* dit trekt de video tot tegen de rand */
+
   border-radius:4px;
   overflow:hidden;
 }
@@ -296,6 +299,8 @@ gap:80px;
   height:100%;
   object-fit:cover;
   opacity:0.95;
+
+  mask-image: linear-gradient(to left, black 70%, transparent);
 }
 
 
