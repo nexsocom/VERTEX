@@ -107,46 +107,47 @@ opacity:0.7;
 /* HERO */
 
 .hero{
-
-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
+  position:relative;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: rgba(0,0,0,0.7); /* overlay zodat hero video zichtbaar blijft */
 }
 
-.heroContent h1{
-
-font-family:'Cinzel';
-font-size:110px;
-
-color:rgba(255,255,255,0.35);
-
+.heroContent{
+  position:relative;
+  z-index:2;
 }
 
+/* KNOCKOUT LOGO IN HERO */
+.logoCutout{
+  font-family:'Cinzel', serif;
+  font-size:110px;
+  line-height:1;
+  color: transparent;
+  background: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  mix-blend-mode: destination-out;
+  margin:0;
+}
+
+/* Hero tekst en knop */
 .heroContent p{
-
-margin-top:20px;
-font-size:20px;
-
+  margin-top:20px;
+  font-size:20px;
+  color:white;
 }
 
 .ctaBtn{
-
-margin-top:30px;
-display:inline-block;
-
-padding:14px 40px;
-
-border:1px solid white;
-
-text-decoration:none;
-
-color:white;
-
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 40px;
+  border:1px solid white;
+  text-decoration:none;
+  color:white;
 }
 
 
