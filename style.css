@@ -190,6 +190,13 @@ height:500px;
 
 overflow:hidden;
 
+display:block;
+
+text-decoration:none;
+color:white;
+
+transition:all 0.4s ease;
+
 }
 
 .specCard img{
@@ -198,10 +205,48 @@ width:100%;
 height:100%;
 
 object-fit:cover;
-border-radius:4px;
-opacity:20;
+
+transition:all 0.6s ease;
 
 }
+
+/* donkerder hover */
+
+.specCard::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.25);
+
+opacity:0;
+
+transition:opacity 0.4s ease;
+
+}
+
+.specCard:hover::after{
+
+opacity:1;
+
+}
+
+/* lichte zoom */
+
+.specCard:hover img{
+
+transform:scale(1.05);
+
+}
+
+/* tekst blijft boven */
 
 .specText{
 
@@ -212,6 +257,8 @@ left:30px;
 
 font-size:24px;
 font-weight:600;
+
+z-index:2;
 
 }
 
