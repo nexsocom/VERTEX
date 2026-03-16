@@ -32,3 +32,17 @@ video.pause()
 })
 
 })
+
+const heroImage = document.querySelector(".serviceHero img");
+
+window.addEventListener("scroll", () => {
+
+if(heroImage){
+
+const scroll = window.scrollY;
+
+heroImage.style.transform = "translateY(" + scroll * 0.35 + "px)";
+
+}
+
+});
