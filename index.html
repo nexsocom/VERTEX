@@ -1,80 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>V.I.S.I.O.N. Drone Visuals</title>
 
-<!-- Fonts -->
+<title>V.I.S.I.O.N.</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<!-- Loader -->
-<div class="loader">
-  <h1 class="logoIntro">V.I.S.I.O.N.</h1>
-</div>
 
-<!-- Navbar -->
-<header>
-  <nav>
-    <div class="logo">V.I.S.I.O.N.</div>
-    <ul>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- Background hero video (blijft spelen) -->
 
-<!-- Hero -->
-<section class="hero">
-  <video autoplay muted loop playsinline class="heroVideo">
-  <source src="hero-video/hero.mp4" type="video/mp4">
+<div class="videoBackground">
+
+<video autoplay muted loop playsinline id="bgVideo">
+<source src="hero-video/hero.mp4" type="video/mp4">
 </video>
 
+</div>
 
-  <div class="heroContent">
-    <h1>V.I.S.I.O.N.</h1>
-    <p>Elevating perspectives with cinematic drone visuals</p>
-    <button class="scrollBtn">Explore Work</button>
-  </div>
+
+
+<!-- Loader -->
+
+<div class="loader">
+
+<div class="loaderContent">
+
+<h1>V.I.S.I.O.N.</h1>
+
+</div>
+
+</div>
+
+
+
+<header>
+
+<nav>
+
+<div class="logo">V.I.S.I.O.N.</div>
+
+<ul>
+
+<li><a href="#specialisaties">Specialisaties</a></li>
+<li><a href="#cinematics">Cinematics</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="heroContent">
+
+<h1>V.I.S.I.O.N.</h1>
+
+<p>Elevating perspectives with cinematic drone visuals</p>
+
+<a href="#contact" class="ctaBtn">Boek je piloot</a>
+
+</div>
+
 </section>
 
-<!-- Work Section -->
-<section class="work" id="work">
-  <h2>Drone Cinematics</h2>
-  <div class="gallery">
-    <div class="videoCard"><video src="videos/drone1.mp4" muted loop></video></div>
-    <div class="videoCard"><video src="videos/drone2.mp4" muted loop></video></div>
-    <div class="videoCard"><video src="videos/drone3.mp4" muted loop></video></div>
-    <div class="videoCard"><video src="videos/drone4.mp4" muted loop></video></div>
-    <div class="videoCard"><video src="videos/drone5.mp4" muted loop></video></div>
-  </div>
+
+
+<!-- SPECIALISATIES -->
+
+<section class="specialisaties" id="specialisaties">
+
+<h2>SPECIALISATIES</h2>
+
+<div class="specGrid">
+
+<div class="specCard">
+
+<img src="images/mapping.jpg">
+
+<div class="specText">
+FOTOGRAMMETRIE<br>
+AERIAL MAPPING
+</div>
+
+</div>
+
+
+<div class="specCard">
+
+<img src="images/inspectie.jpg">
+
+<div class="specText">
+INSPECTIE
+</div>
+
+</div>
+
+
+<div class="specCard">
+
+<img src="images/thermo.jpg">
+
+<div class="specText">
+THERMOGRAFIE<br>
+BASIC & NACHTVLUCHTEN
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- About Section -->
-<section class="about" id="about">
-  <div class="aboutText">
-    <h2>Elevating Perspective</h2>
-    <p>V.I.S.I.O.N. delivers cinematic drone visuals designed to capture attention and reveal perspectives impossible from the ground.</p>
-  </div>
+
+
+<!-- VIDEO WINDOW SECTION -->
+
+<section class="videoWindow">
+
+<div class="cutout"></div>
+
 </section>
 
-<!-- Contact Section -->
+
+
+<!-- DRONE CINEMATICS -->
+
+<section class="cinematics" id="cinematics">
+
+<h2>DRONE CINEMATICS</h2>
+
+<div class="carousel">
+
+<div class="carouselTrack">
+
+<video src="videos/drone1.mp4" muted loop></video>
+<video src="videos/drone2.mp4" muted loop></video>
+<video src="videos/drone3.mp4" muted loop></video>
+<video src="videos/drone4.mp4" muted loop></video>
+<video src="videos/drone5.mp4" muted loop></video>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
-  <h2>Let's Create Something</h2>
-  <button class="contactBtn">Get In Touch</button>
+
+<h2>Boek je piloot</h2>
+
+<p>
+
+Whatsapp: +32 476 17 09 07<br>
+sales@nexsocom.com
+
+</p>
+
 </section>
 
-<!-- Footer -->
+
+
 <footer>
-  <p>© 2026 V.I.S.I.O.N. Drone Visuals</p>
+
+<p>© V.I.S.I.O.N.</p>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
