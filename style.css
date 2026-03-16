@@ -216,14 +216,12 @@ font-weight:600;
 
 /* QUOTE SECTION */
 
-.quoteSection{
-
-padding:20px 10%;
-background:black;
-
-display:flex;
-justify-content:flex-start;
-
+.quoteSection {
+  position: relative; /* zorg dat side video binnen deze sectie blijft */
+  padding:20px 10%;
+  background:black;
+  display:flex;
+  justify-content:flex-start;
 }
 
 .quoteWrapper{
@@ -279,7 +277,7 @@ gap:80px;
 /* QUOTE VIDEO RECHTS - SIDE PANEL EFFECT */
 .quoteImage {
   position: absolute;       /* zodat hij los van de quote kan staan */
-  top: 20%;                 /* beetje lager dan de top van de sectie */
+  top: 10%;                 /* beetje lager dan de top van de sectie */
   right: 0;                 /* plakt aan de rechterkant */
   width: 40%;               /* maakt de video veel groter */
   max-width:600px;          /* limiet zodat het niet te groot wordt */
