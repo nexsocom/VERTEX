@@ -1,20 +1,19 @@
 // HERO PARALLAX
 
-window.addEventListener("scroll",()=>{
-
-const heroContent = document.querySelector(".heroContent")
+const heroContent = document.querySelector(".heroContent");
 
 if(heroContent){
 
-let scroll = window.scrollY
+window.addEventListener("scroll",()=>{
 
-heroContent.style.transform = `translateY(${scroll*0.25}px)`
-heroContent.style.opacity = 1 - scroll/500
+let scroll = window.scrollY;
+
+heroContent.style.transform = `translateY(${scroll*0.25}px)`;
+heroContent.style.opacity = 1 - scroll/500;
+
+});
 
 }
-
-})
-
 
 
 
@@ -22,16 +21,10 @@ heroContent.style.opacity = 1 - scroll/500
 
 document.querySelectorAll("video").forEach(video=>{
 
-video.addEventListener("mouseenter",()=>{
-video.play()
-})
+video.addEventListener("mouseenter",()=>video.play());
+video.addEventListener("mouseleave",()=>video.pause());
 
-video.addEventListener("mouseleave",()=>{
-video.pause()
-})
-
-})
-
+});
 
 
 
@@ -39,14 +32,14 @@ video.pause()
 
 const heroImage = document.querySelector(".serviceHero img");
 
-window.addEventListener("scroll", () => {
-
 if(heroImage){
+
+window.addEventListener("scroll",()=>{
 
 const scroll = window.scrollY;
 
-heroImage.style.transform = "translateY(" + scroll * 0.35 + "px)";
-
-}
+heroImage.style.transform = `translateY(${scroll*0.35}px)`;
 
 });
+
+}
