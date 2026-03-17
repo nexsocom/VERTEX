@@ -267,8 +267,8 @@ text-align:center;
 
 z-index:2;
 
-transition:transform 0.4s ease;
-
+transition:transform 0.4s ease, opacity 0.4s ease;
+  
 text-shadow:0 2px 10px rgba(0,0,0,0.6);
 
 }
