@@ -180,6 +180,8 @@ grid-template-columns:repeat(3,1fr);
 
 gap:40px;
 
+scroll-margin-top: 120px; /* of iets kleins, zodat de grid zichtbaar blijft */
+
 }
 
 .specCard{
