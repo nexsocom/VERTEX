@@ -258,7 +258,8 @@ position:absolute;
 top:30px;
 left:50%;
 
-transform:translateX(-50%);
+/* BELANGRIJK: beide assen definiëren */
+transform:translate(-50%, 0);
 
 font-size:24px;
 font-weight:600;
