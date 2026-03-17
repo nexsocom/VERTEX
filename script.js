@@ -53,4 +53,19 @@ document.querySelector('a[href="#specialisaties"]').addEventListener('click', fu
     behavior: 'smooth'
   });
 });
+
+}
+
+// CONTACT SCROLL FIX (optioneel, blijft 120px offset)
+const contactLink = document.querySelector('a[href="#contact"]');
+const contactSection = document.querySelector('#contact');
+
+if (contactLink && contactSection) {
+  contactLink.addEventListener('click', function(e){
+    e.preventDefault();
+    window.scrollTo({
+      top: contactSection.offsetTop - 120, // ruimte voor header
+      behavior: 'smooth'
+    });
+  });
 }
