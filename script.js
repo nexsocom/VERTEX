@@ -42,4 +42,14 @@ heroImage.style.transform = `translateY(${scroll*0.35}px)`;
 
 });
 
+  
 }
+
+document.querySelector('a[href="#specialisaties"]').addEventListener('click', function(e){
+  e.preventDefault();
+  const target = document.querySelector('.specGrid');
+  window.scrollTo({
+    top: target.offsetTop - 20, // pas dit getal aan voor wat ruimte boven de cards
+    behavior: 'smooth'
+  });
+});
