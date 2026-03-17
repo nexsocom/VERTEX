@@ -45,53 +45,6 @@ heroImage.style.transform = `translateY(${scroll*0.35}px)`;
   
 }
 
-document.querySelector('a[href="#specialisaties"]').addEventListener('click', function(e){
-  e.preventDefault();
-  const target = document.querySelector('.specGrid');
-  window.scrollTo({
-    top: target.offsetTop - 20, // pas dit getal aan voor wat ruimte boven de cards
-    behavior: 'smooth'
-  });
-});
-
-}
-
-// CONTACT SCROLL FIX (optioneel, blijft 120px offset)
-const contactLink = document.querySelector('a[href="#contact"]');
-const contactSection = document.querySelector('#contact');
-
-if (contactLink && contactSection) {
-  contactLink.addEventListener('click', function(e){
-    e.preventDefault();
-    window.scrollTo({
-      top: contactSection.offsetTop - 120, // ruimte voor header
-      behavior: 'smooth'
-    });
-  });
-}
-
-// SCROLL FIX VOOR NAVBAR LINKS
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function(e){
-    const href = this.getAttribute('href');
-    if(!href.startsWith('#')) return; // alleen interne anchors
-    e.preventDefault();
-
-    const target = document.querySelector(href);
-    if(!target) return;
-
-    let offset = 0; // standaard: helemaal bovenaan
-
-    if(href === '#contact'){
-      offset = 120; // header hoogte
-    }
-
-    window.scrollTo({
-      top: target.offsetTop - offset,
-      behavior: 'smooth'
-    });
-  });
-});
 
 // NAVBAR INTERNAL SCROLL FIX
 document.querySelectorAll('nav a').forEach(link => {
