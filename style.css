@@ -699,7 +699,6 @@ margin-bottom:30px;
 }
 
 
-
 /* CTA */
 
 .serviceCTA{
@@ -714,4 +713,110 @@ background:black;
 
 section{
 scroll-margin-top:120px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+/* NAVBAR */
+nav{
+padding:15px 5%;
+}
+
+nav ul{
+gap:20px;
+font-size:14px;
+}
+
+
+/* HERO */
+.hero{
+height:90vh;
+}
+
+.logoCutout{
+font-size:60px;
+}
+
+.heroContent p{
+font-size:16px;
+}
+
+.ctaBtn{
+padding:10px 25px;
+font-size:14px;
+}
+
+
+/* SPECIALISATIES */
+
+.specialisaties{
+padding:120px 5%;
+}
+
+.specialisaties h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.specGrid{
+grid-template-columns:1fr; /* 1 kolom ipv 3 */
+gap:20px;
+}
+
+.specCard{
+height:300px; /* minder hoog */
+}
+
+
+/* QUOTE SECTION */
+
+.quoteSection{
+flex-direction:column;
+padding:80px 5%;
+}
+
+.quoteLayout{
+flex-direction:column;
+gap:40px;
+}
+
+.quoteImage{
+width:100%;
+right:0; /* reset die side offset */
+}
+
+.quoteWrapper{
+max-width:100%;
+}
+
+
+/* CINEMATICS */
+
+.cinematics{
+padding:120px 0;
+}
+
+.carousel{
+padding-left:5%;
+}
+
+.carousel video{
+width:280px; /* kleiner zodat ze zichtbaar zijn */
+margin-right:15px;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:120px 5%;
+}
+
+.contact h2{
+font-size:32px;
+}
+
 }
