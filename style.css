@@ -278,7 +278,7 @@ text-shadow:0 2px 10px rgba(0,0,0,0.6);
 
 .specCard:hover .specText{
 
-transform:translateY(-10px);
+transform:translate(-50%, -10px);
 
 }
 
