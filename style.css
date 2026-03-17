@@ -842,3 +842,36 @@ height:60vh; /* minder hoog */
 }
 
 }
+
+/* MOBILE NAVBAR ADJUSTMENTS */
+@media (max-width: 768px) {
+  /* Verberg de UL met navigatieknoppen */
+  nav ul {
+    display: none;
+  }
+
+  /* Houd logo zichtbaar en gecentreerd */
+  nav .logo {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  /* Navbar achtergrond en padding aanpassen zodat logo netjes staat */
+  header nav {
+    justify-content: center;
+    padding: 15px 0;
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+/* SCROLL FIX PER SECTIE */
+
+/* Contact - iets naar beneden scrollen zodat titel mooi in beeld staat */
+#contact {
+  scroll-margin-top: 120px;
+}
+
+/* Specialisaties - direct bovenaan scrollen */
+#specialisaties {
+  scroll-margin-top: 0;
+}
