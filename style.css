@@ -362,6 +362,80 @@ transition:transform 0.8s ease;
   opacity: 0.7;
 }
 
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+.whyItem {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 40px 25px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyItem::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.0), rgba(255,255,255,0.05));
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.whyItem:hover::before {
+  opacity: 1;
+}
+
+.whyItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.25);
+}
+
+.whyIcon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.whyItem:hover .whyIcon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.whyItem h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.whyItem p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+  .whySection {
+    padding: 100px 5%;
+  }
+  .whySection h2 {
+    font-size: 32px;
+  }
+}
 
 
 /* ================= PROS MOBILE ================= */
