@@ -207,6 +207,116 @@ transition:transform 0.8s ease;
 
 }
 
+/* ================= PROCESS SECTION ================= */
+
+.processSection {
+  padding: 200px 10%;
+  background: black;
+  text-align: center;
+}
+
+.processSection h2 {
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.processItem {
+  text-align: left;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+}
+
+.processItem span {
+  font-size: 14px;
+  opacity: 0.4;
+  letter-spacing: 2px;
+}
+
+.processItem h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.processItem p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+
+
+/* ================= WHY SECTION ================= */
+
+.whySection {
+  padding: 150px 10%;
+  background: black;
+  text-align: center;
+}
+
+.whySection h2 {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.whyItem {
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+}
+
+.whyItem:hover {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-5px);
+}
+
+.whyItem h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.whyItem p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+
+
+/* ================= PROS MOBILE ================= */
+
+@media (max-width: 768px){
+
+.processGrid {
+  grid-template-columns: 1fr;
+}
+
+.whyGrid {
+  grid-template-columns: 1fr;
+}
+
+.processSection,
+.whySection {
+  padding: 100px 5%;
+}
+
+.processSection h2,
+.whySection h2 {
+  font-size: 32px;
+}
+
+}
+
 
 /* DARK CINEMATIC OVERLAY */
 
