@@ -104,6 +104,29 @@ nav a:hover {
   -webkit-text-stroke: 1px white;
 }
 
+.heroTitle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+
+  flex-wrap:wrap; /* belangrijk voor mobile */
+}
+
+/* Subtekst naast VERTEX */
+.heroSub{
+  font-family:'Inter', sans-serif;
+  font-size:22px;
+  font-weight:300;
+
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  opacity:0.7;
+
+  transform:translateY(5px); /* lichte alignment tweak */
+}
+
 .heroContent p {
   margin-top: 20px;
   font-size: 20px;
