@@ -293,28 +293,91 @@ nav a:hover {
 }
 
 
-/* ================= QUOTE ================= */
+/* ================= QUOTE SECTION (HIGH END) ================= */
 
 .quoteSection {
-  padding: 80px 10%;
-  display: flex;
-  gap: 40px;
+  padding: 140px 10%;
+  background: black;
 }
+
+.quoteLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* TEXT */
 
 .quoteWrapper {
   max-width: 520px;
-  border-left: 2px solid rgba(255,255,255,0.2);
-  padding-left: 20px;
+  border-left: 2px solid rgba(255,255,255,0.15);
+  padding-left: 25px;
 }
 
+.quoteText {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.95;
+}
+
+.quoteExplanation {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.6;
+}
+
+
+/* VIDEO (FIXED & PREMIUM) */
+
 .quoteImage {
-  width: 50%;
+  width: 480px;
+  height: 300px;
+  border-radius: 12px;
   overflow: hidden;
+  position: relative;
+
+  /* subtle glass effect */
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.02);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+
+  transition: transform 0.4s ease;
+}
+
+.quoteImage:hover {
+  transform: translateY(-5px) scale(1.01);
 }
 
 .quoteImage video {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  opacity: 0.95;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .quoteLayout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .quoteImage {
+    width: 100%;
+    height: 220px;
+  }
+
+  .quoteWrapper {
+    max-width: 100%;
+  }
+
 }
 
 
