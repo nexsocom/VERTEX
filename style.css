@@ -561,67 +561,138 @@ footer {
 /* ================= MOBILE OPTIMIZATIONS ================= */
 
 @media (max-width: 768px) {
-  /* Verberg de navigatie links */
+
+  /* STOP HORIZONTAAL SCROLLEN */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  /* NAVBAR */
   nav ul {
     display: none;
   }
 
-  /* Logo centreren in de navbar */
   nav {
     justify-content: center;
     padding: 15px 5%;
   }
 
-  /* Maak de grote VERTEX tekst kleiner zodat hij op het scherm past */
-  .logoCutout {
-    font-size: 60px;
+  .logo {
+    font-size: 20px;
   }
 
-  /* Pas de subtitels aan voor mobiel */
-  .heroSub span {
-    font-size: 24px;
+  /* HERO */
+  .hero {
+    height: 90vh;
+    padding: 0 5%;
+  }
+
+  .logoCutout {
+    font-size: 56px;
+    line-height: 1.1;
   }
 
   .heroTitle {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .heroRight {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
+  /* Divider wordt horizontaal */
   .divider {
-    width: 50px;
+    width: 60px;
     height: 1px;
-    align-self: center;
+    background: rgba(255,255,255,0.3);
   }
 
-  /* Zet grids onder elkaar in plaats van naast elkaar */
-  .specGrid, 
-  .processGrid, 
+  /* Subtitle */
+  .heroSub {
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .heroSub span {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .heroContent p {
+    font-size: 16px;
+  }
+
+  .ctaBtn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  /* SECTIONS PADDING FIX */
+  .specialisaties,
+  .processSection,
+  .whySection,
+  .contact {
+    padding: 80px 5%;
+  }
+
+  /* TITELS */
+  .specialisaties h2,
+  .processSection h2,
+  .whySection h2,
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  /* GRIDS NAAR 1 KOLOM */
+  .specGrid,
+  .processGrid,
   .whyGrid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  /* Quote sectie aanpassen */
-  .quoteLayout, .quoteSection {
+  .specCard {
+    height: 280px;
+  }
+
+  /* PROCESS LINE UIT */
+  .processLine {
+    display: none;
+  }
+
+  /* QUOTE */
+  .quoteSection {
     flex-direction: column;
-    padding: 50px 5%;
+    padding: 60px 5%;
+    gap: 30px;
+  }
+
+  .quoteLayout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .quoteWrapper {
+    max-width: 100%;
   }
 
   .quoteImage {
     width: 100%;
-    margin-right: 0;
+    margin: 0;
   }
 
-  .processLine {
-    display: none; /* De horizontale lijn klopt niet meer in verticale stand */
+  /* CINEMATICS */
+  .cinematicItem {
+    width: 100%;
+    height: 180px;
   }
 
-  .specialisaties, .processSection, .whySection {
-    padding: 80px 5%;
-  }
 }
