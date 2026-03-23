@@ -1,285 +1,217 @@
-/* ================= RESET ================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: black;
-  color: white;
-}
-
-
-/* ================= BACKGROUND VIDEO ================= */
-
-.videoBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
-#bgVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* ================= BLACK BACKGROUND ================= */
 
 body{
-  font-family:'Inter',sans-serif;
-  background:black;
-  color:white;
-}
 
-/* extra zekerheid dat ALLES zwart blijft */
-section{
-  background:black;
+font-family:'Inter',sans-serif;
+background:black;
+color:white;
+
 }
 
 
-/* ================= NAVBAR ================= */
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+/* VIDEO BACKGROUND */
+
+.videoBackground{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+z-index:-2;
+
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 10%;
-  background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
+#bgVideo{
 
-.logo {
-  font-family: 'Cinzel';
-  font-size: 22px;
-}
+width:100%;
+height:100%;
+object-fit:cover;
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
-nav a:hover {
-  opacity: 0.7;
 }
 
 
-/* ================= HERO ================= */
 
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: rgba(0,0,0,0.7);
+/* NAVBAR */
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+
+z-index:100;
+
 }
 
-.heroContent {
-  z-index: 2;
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 10%;
+
+background:rgba(0,0,0,0.25);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,0.05);
+
 }
 
-.logoCutout {
-  font-family: 'Cinzel', serif;
-  font-size: 110px;
+.logo{
+
+font-family:'Cinzel';
+font-size:22px;
+
+}
+
+nav ul{
+
+list-style:none;
+display:flex;
+gap:40px;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+font-weight:500;
+
+}
+
+nav a:visited{
+color:white;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
+
+
+/* HERO */
+
+.hero{
+  position:relative;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: rgba(0,0,0,0.7); /* overlay zodat hero video zichtbaar blijft */
+}
+
+.heroContent{
+  position:relative;
+  z-index:2;
+}
+
+/* KNOCKOUT LOGO IN HERO */
+.logoCutout{
+  font-family:'Cinzel', serif;
+  font-size:110px;
   color: transparent;
   -webkit-text-stroke: 1px white;
 }
 
-.heroContent p {
-  margin-top: 20px;
-  font-size: 20px;
+/* Hero tekst en knop */
+.heroContent p{
+  margin-top:20px;
+  font-size:20px;
+  color:white;
 }
 
-.ctaBtn {
-  margin-top: 30px;
-  display: inline-block;
-  padding: 14px 40px;
-  border: 1px solid white;
-  color: white;
-  text-decoration: none;
+.ctaBtn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 40px;
+  border:1px solid white;
+  text-decoration:none;
+  color:white;
 }
 
 
-/* ================= SPECIALISATIES ================= */
 
-.specialisaties {
-  padding: 200px 10%;
+/* SPECIALISATIES */
+
+.specialisaties{
+
+padding:200px 10%;
+
+background:black;
+
 }
 
-.specialisaties h2 {
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 80px;
+.specialisaties h2{
+
+text-align:center;
+
+margin-bottom:80px;
+
+font-size:50px;
+
 }
 
-.specGrid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 40px;
+.specGrid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+scroll-margin-top: 120px; /* of iets kleins, zodat de grid zichtbaar blijft */
+
 }
 
 .specCard{
 
-  position:relative;
-  height:500px;
-  overflow:hidden;
+position:relative;
+height:500px;
+overflow:hidden;
 
-  display:block;
+display:block;
 
-  text-decoration:none;
-  color:white;
+text-decoration:none;
+color:white;
 
-  transition:all 0.5s ease;
+transition:all 0.5s ease;
 
-  cursor:pointer;
+cursor:pointer;
 
 }
 
 .specCard img{
 
-  width:100%;
-  height:100%;
+width:100%;
+height:100%;
 
-  object-fit:cover;
+object-fit:cover;
 
-  transition:transform 0.8s ease;
-
-}
-
-
-/* DARK CINEMATIC OVERLAY */
-
-.specCard::after{
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-  left:0;
-
-  width:100%;
-  height:100%;
-
-  background:rgba(0,0,0,0.25);
-
-  opacity:1;
-
-  transition:opacity 0.4s ease;
+transition:transform 0.8s ease;
 
 }
 
-.specCard:hover::after{
-
-  background:rgba(0,0,0,0.45);
-
-}
-
-
-/* ZOOM EFFECT */
-
-.specCard:hover img{
-
-  transform:scale(1.08);
-
-}
-
-
-/* SERVICE TEXT */
-
-.specText{
-
-  position:absolute;
-
-  top:30px;
-  left:50%;
-
-  transform:translate(-50%, 0);
-
-  font-size:24px;
-  font-weight:600;
-
-  text-align:center;
-
-  z-index:2;
-
-  transition:transform 0.4s ease, opacity 0.4s ease;
-
-  text-shadow:0 2px 10px rgba(0,0,0,0.6);
-
-}
-
-
-/* TEXT SLIDES UP */
-
-.specCard:hover .specText{
-
-  transform:translate(-50%, -10px);
-
-}
-
-
-/* VIEW SERVICE BUTTON */
-
-.specCard::before{
-
-  content:"VIEW SERVICE →";
-
-  position:absolute;
-
-  bottom:30px;
-  left:30px;
-
-  font-size:14px;
-  letter-spacing:2px;
-
-  opacity:0;
-
-  z-index:2;
-
-  transition:all 0.4s ease;
-
-}
-
-.specCard:hover::before{
-
-  opacity:1;
-  transform:translateY(-5px);
-
-}
-
-
-/* ================= PROCESS ================= */
+/* ================= PROCESS SECTION ================= */
 
 .processSection {
   padding: 200px 10%;
+  background: black;
   text-align: center;
 }
 
@@ -288,49 +220,113 @@ nav a:hover {
   margin-bottom: 80px;
 }
 
+
+.processItem h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.processItem p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+
+/* ================= PROCESS LINE SYSTEM ================= */
+
 .processWrapper {
   position: relative;
 }
 
+/* HORIZONTALE LIJN */
 .processLine {
   position: absolute;
   top: 20px;
+  left: 0;
   width: 100%;
   height: 1px;
   background: rgba(255,255,255,0.1);
 }
 
+/* GRID */
 .processGrid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-}
-
-.processItem {
-  text-align: left;
-  padding-top: 40px;
   position: relative;
 }
 
+/* ITEM */
+.processItem {
+  position: relative;
+  text-align: left;
+  padding-top: 40px;
+}
+
+/* NUMMER OP LIJN */
 .processNumber {
   position: absolute;
   top: 0;
+  left: 0;
+
   font-size: 14px;
+  letter-spacing: 2px;
+
   background: black;
   padding: 4px 10px;
+
   border: 1px solid rgba(255,255,255,0.15);
   opacity: 0.6;
 }
 
+/* TITEL + TEXT */
+.processItem h3 {
+  margin: 20px 0 10px;
+  font-size: 22px;
+}
+
+.processItem p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+/* SUBTIELE HOVER */
 .processItem:hover .processNumber {
   opacity: 1;
+  border-color: rgba(255,255,255,0.4);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+.processLine {
+  display: none; /* geen lijn op mobiel */
+}
+
+.processGrid {
+  grid-template-columns: 1fr;
+}
+
+.processItem {
+  padding-top: 20px;
+}
+
+.processNumber {
+  position: relative;
+  margin-bottom: 10px;
+}
+
 }
 
 
-/* ================= WHY ================= */
+/* ================= WHY SECTION ================= */
 
 .whySection {
   padding: 150px 10%;
+  background: black;
   text-align: center;
 }
 
@@ -341,8 +337,36 @@ nav a:hover {
 
 .whyGrid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+
+.whyItem {
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+}
+
+.whyItem:hover {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-5px);
+}
+
+.whyItem h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.whyItem p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
 }
 
 .whyItem {
@@ -350,125 +374,766 @@ nav a:hover {
   border: 1px solid rgba(255,255,255,0.1);
   padding: 40px 25px;
   border-radius: 12px;
-  transition: 0.4s;
+  transition: all 0.4s ease;
+  text-align: center;
   position: relative;
   overflow: hidden;
-}
-
-.whyItem:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(255,255,255,0.1);
 }
 
 .whyItem::before {
   content: "";
   position: absolute;
+  top: -50%;
+  left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.0), rgba(255,255,255,0.05));
   transform: rotate(45deg);
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s ease;
 }
 
 .whyItem:hover::before {
   opacity: 1;
 }
 
-
-/* ================= QUOTE SECTION (HIGH END) ================= */
-
-.quoteSection {
-  padding: 140px 10%;
-  background: black;
+.whyItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.25);
 }
 
-.quoteLayout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
-}
-
-/* TEXT */
-
-.quoteWrapper {
-  max-width: 520px;
-  border-left: 2px solid rgba(255,255,255,0.15);
-  padding-left: 25px;
-}
-
-.quoteText {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  opacity: 0.95;
-}
-
-.quoteExplanation {
-  font-size: 14px;
-  line-height: 1.6;
-  opacity: 0.6;
-}
-
-
-/* VIDEO (FIXED & PREMIUM) */
-
-.quoteImage {
-  width: 480px;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-
-  /* subtle glass effect */
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.02);
-
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-
+.whyIcon {
+  font-size: 40px;
+  margin-bottom: 20px;
   transition: transform 0.4s ease;
 }
 
-.quoteImage:hover {
-  transform: translateY(-5px) scale(1.01);
+.whyItem:hover .whyIcon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.whyItem h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.whyItem p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+  .whySection {
+    padding: 100px 5%;
+  }
+  .whySection h2 {
+    font-size: 32px;
+  }
+}
+
+
+/* ================= PROS MOBILE ================= */
+
+@media (max-width: 768px){
+
+.processGrid {
+  grid-template-columns: 1fr;
+}
+
+.whyGrid {
+  grid-template-columns: 1fr;
+}
+
+.processSection,
+.whySection {
+  padding: 100px 5%;
+}
+
+.processSection h2,
+.whySection h2 {
+  font-size: 32px;
+}
+
+}
+
+
+/* DARK CINEMATIC OVERLAY */
+
+.specCard::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.25);
+
+opacity:1;
+
+transition:opacity 0.4s ease;
+
+}
+
+.specCard:hover::after{
+
+background:rgba(0,0,0,0.45);
+
+}
+
+
+/* ZOOM EFFECT */
+
+.specCard:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+/* SERVICE TEXT */
+
+.specText{
+
+position:absolute;
+
+top:30px;
+left:50%;
+
+/* BELANGRIJK: beide assen definiëren */
+transform:translate(-50%, 0);
+
+font-size:24px;
+font-weight:600;
+
+text-align:center;
+
+z-index:2;
+
+transition:transform 0.4s ease, opacity 0.4s ease;
+  
+text-shadow:0 2px 10px rgba(0,0,0,0.6);
+
+}
+
+
+/* TEXT SLIDES UP */
+
+.specCard:hover .specText{
+
+transform:translate(-50%, -10px);
+
+}
+
+
+/* VIEW SERVICE BUTTON */
+
+.specCard::before{
+
+content:"VIEW SERVICE →";
+
+position:absolute;
+
+bottom:30px;
+left:30px;
+
+font-size:14px;
+letter-spacing:2px;
+
+opacity:0;
+
+z-index:2;
+
+transition:all 0.4s ease;
+
+}
+
+.specCard:hover::before{
+
+opacity:1;
+transform:translateY(-5px);
+
+}
+
+
+/* QUOTE SECTION */
+
+.quoteSection {
+  position: relative;
+  padding:40px 10%;
+  background:black;
+
+  /* Flex voor side video en quote */
+  display:flex;
+  flex-direction:row;       /* video rechts, quote links */
+  justify-content:space-between;
+  align-items:flex-start;   /* video iets lager dan quote */
+  gap:40px;
+}
+
+.quoteWrapper{
+
+max-width:520px;
+
+border-left:2px solid rgba(255,255,255,0.2);
+padding-left:20px;
+
+}
+
+.quoteText{
+
+font-family:'Inter',sans-serif;
+font-size:20px;
+
+font-style:italic;
+
+line-height:1.6;
+
+margin-bottom:12px;
+
+opacity:0.9;
+
+}
+
+.quoteExplanation{
+
+font-size:14px;
+
+line-height:1.6;
+
+opacity:0.6;
+
+}
+
+
+/* QUOTE LAYOUT */
+
+.quoteLayout{
+
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+
+gap:80px;
+
+}
+
+
+/* VIDEO RECHTS */
+
+/* QUOTE VIDEO RECHTS - SIDE PANEL EFFECT */
+
+.quoteImage{
+  position:relative;
+
+  width:50%;
+  max-width:750px;
+
+  right:-10vw; /* trekt hem naar de rand van het scherm */
+
+  flex-shrink:0;
+  overflow:hidden;
 }
 
 .quoteImage video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.95;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.95;
+
+  mask-image: linear-gradient(to left, black 70%, transparent);
 }
 
 
-/* MOBILE */
 
+/* REVEAL STRIP */
+
+.revealStrip{
+
+width:100%;
+height:35px;
+
+margin:40px 0;
+
+background:transparent;
+
+position:relative;
+
+}
+
+.revealStrip::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(
+to bottom,
+black 0%,
+transparent 40%,
+transparent 60%,
+black 100%
+);
+
+}
+
+
+
+/* CINEMATICS */
+
+.cinematics{
+
+padding:200px 0;
+
+background:black;
+
+}
+
+.cinematics h2{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+
+
+.carousel{
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+padding-left:10%;
+
+}
+
+.carousel video{
+
+width:500px;
+
+margin-right:30px;
+
+display:inline-block;
+
+border-radius:4px;
+opacity:0.95;
+
+}
+
+
+
+/* CONTACT */
+
+.contact{
+
+padding:200px 10%;
+
+text-align:center;
+
+background:black;
+
+}
+
+.contact h2{
+
+font-size:50px;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+background:black;
+
+}
+
+
+/* SERVICE PAGE HERO */
+
+.serviceHero{
+
+position:relative;
+
+height:70vh;
+
+overflow:hidden;
+
+display:flex;
+align-items:center;
+
+}
+
+.serviceHero img{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+filter:brightness(0.5);
+
+}
+
+.serviceHeroText{
+
+position:relative;
+
+z-index:2;
+
+padding:0 10%;
+
+max-width:700px;
+
+}
+
+.serviceHeroText h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* SERVICE CONTENT */
+
+.serviceContent{
+
+padding:120px 10%;
+
+max-width:900px;
+
+}
+
+.serviceContent h2{
+
+font-size:36px;
+
+margin-bottom:30px;
+
+}
+
+.serviceContent p{
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+opacity:0.8;
+
+}
+
+
+
+/* SERVICE CTA */
+
+.serviceCTA{
+
+padding:120px 10%;
+
+text-align:center;
+
+background:black;
+
+}
+
+/* SERVICE HERO */
+
+.serviceHero{
+
+position:relative;
+height:80vh;
+
+display:flex;
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.serviceHero img{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:120%;
+
+object-fit:cover;
+
+transform:translateY(0);
+
+z-index:-1;
+
+}
+
+.serviceHeroText{
+
+position:relative;
+
+padding:0 10%;
+
+max-width:700px;
+
+}
+
+.serviceHeroText h1{
+
+font-size:70px;
+margin-bottom:20px;
+
+}
+
+.serviceHeroText p{
+
+font-size:20px;
+opacity:0.8;
+
+}
+
+
+
+/* SERVICE CONTENT */
+
+.serviceContent{
+
+padding:200px 10%;
+background:black;
+
+}
+
+.serviceText{
+
+max-width:700px;
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+.serviceText h2{
+
+font-size:40px;
+margin-bottom:30px;
+
+}
+
+
+/* CTA */
+
+.serviceCTA{
+
+padding:200px 10%;
+
+text-align:center;
+
+background:black;
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+/* NAVBAR */
+nav{
+padding:15px 5%;
+}
+
+nav ul{
+gap:20px;
+font-size:14px;
+}
+
+
+/* HERO */
+.hero{
+height:90vh;
+}
+
+.logoCutout{
+font-size:60px;
+}
+
+.heroContent p{
+font-size:16px;
+}
+
+.ctaBtn{
+padding:10px 25px;
+font-size:14px;
+}
+
+
+/* SPECIALISATIES */
+
+.specialisaties{
+padding:120px 5%;
+}
+
+.specialisaties h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.specGrid{
+grid-template-columns:1fr; /* 1 kolom ipv 3 */
+gap:20px;
+}
+
+.specCard{
+height:300px; /* minder hoog */
+}
+
+
+/* QUOTE SECTION */
+
+.quoteSection{
+flex-direction:column;
+padding:80px 5%;
+}
+
+.quoteLayout{
+flex-direction:column;
+gap:40px;
+}
+
+.quoteImage{
+width:100%;
+right:0; /* reset die side offset */
+}
+
+.quoteWrapper{
+max-width:100%;
+}
+
+
+/* CINEMATICS */
+
+.cinematics{
+padding:120px 0;
+}
+
+.carousel{
+padding-left:5%;
+}
+
+.carousel video{
+width:280px; /* kleiner zodat ze zichtbaar zijn */
+margin-right:15px;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:120px 5%;
+}
+
+.contact h2{
+font-size:32px;
+}
+
+}
+
+@media (max-width: 768px){
+
+header{
+display:none;
+}
+
+.serviceHeroText h1{
+font-size:42px;       /* kleiner */
+line-height:1.2;      /* meer ademruimte */
+word-break:break-word; /* voorkomt afsnijden */
+}
+
+.serviceHeroText{
+padding:0 5%;
+}
+
+.serviceHero{
+height:60vh; /* minder hoog */
+}
+
+}
+
+/* MOBILE NAVBAR ADJUSTMENTS */
 @media (max-width: 768px) {
-
-  .quoteLayout {
-    flex-direction: column;
-    gap: 40px;
+  /* Verberg de UL met navigatieknoppen */
+  nav ul {
+    display: none;
   }
 
-  .quoteImage {
-    width: 100%;
-    height: 220px;
+  /* Houd logo zichtbaar en gecentreerd */
+  nav .logo {
+    margin: 0 auto;
+    font-size: 24px;
   }
 
-  .quoteWrapper {
-    max-width: 100%;
+  /* Navbar achtergrond en padding aanpassen zodat logo netjes staat */
+  header nav {
+    justify-content: center;
+    padding: 15px 0;
+    background: rgba(0,0,0,0.2);
   }
-
 }
 
+/* SCROLL FIX PER SECTIE */
 
-/* ================= CINEMATICS ================= */
+/* Contact - iets naar beneden scrollen zodat titel mooi in beeld staat */
+#contact {
+  scroll-margin-top: 120px;
+}
+
+/* Specialisaties - direct bovenaan scrollen */
+#specialisaties {
+  scroll-margin-top: 30px; /* genoeg zodat de cards volledig zichtbaar zijn, pas aan naar smaak */
+}
 
 .cinematics {
   padding: 100px 10%;
+  background: black;
   text-align: center;
+}
+
+.cinematics h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .cinematicGallery {
@@ -482,64 +1147,18 @@ nav a:hover {
   width: 300px;
   height: 170px;
   overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
 }
 
 .cinematicItem video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: transform 0.5s ease;
 }
 
 .cinematicItem:hover video {
   transform: scale(1.05);
-}
-
-
-/* ================= CONTACT ================= */
-
-.contact {
-  padding: 200px 10%;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 50px;
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px){
-
-header {
-  display: none;
-}
-
-.hero {
-  height: 90vh;
-}
-
-.logoCutout {
-  font-size: 60px;
-}
-
-.specGrid,
-.processGrid,
-.whyGrid {
-  grid-template-columns: 1fr;
-}
-
-.specCard {
-  height: 300px;
-}
-
-.quoteSection {
-  flex-direction: column;
-}
-
-.quoteImage {
-  width: 100%;
-}
-
 }
