@@ -557,3 +557,251 @@ footer {
 }
 
 }
+
+
+/* ================= MOBILE 01 ================= */
+
+@media (max-width: 768px){
+
+.processLine {
+  display: none; /* geen lijn op mobiel */
+}
+
+.processGrid {
+  grid-template-columns: 1fr;
+}
+
+.processItem {
+  padding-top: 20px;
+}
+
+.processNumber {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+}
+
+
+/* ================= PROS MOBILE ================= */
+
+@media (max-width: 768px){
+
+.processGrid {
+  grid-template-columns: 1fr;
+}
+
+.whyGrid {
+  grid-template-columns: 1fr;
+}
+
+.processSection,
+.whySection {
+  padding: 100px 5%;
+}
+
+.processSection h2,
+.whySection h2 {
+  font-size: 32px;
+}
+
+}
+
+
+/* ================= MOBILE 02 ================= */
+
+@media (max-width: 768px){
+
+/* NAVBAR */
+nav{
+padding:15px 5%;
+}
+
+nav ul{
+gap:20px;
+font-size:14px;
+}
+
+
+/* HERO */
+.hero{
+height:90vh;
+}
+
+.logoCutout{
+font-size:60px;
+}
+
+.heroContent p{
+font-size:16px;
+}
+
+.ctaBtn{
+padding:10px 25px;
+font-size:14px;
+}
+
+
+/* SPECIALISATIES */
+
+.specialisaties{
+padding:120px 5%;
+}
+
+.specialisaties h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.specGrid{
+grid-template-columns:1fr; /* 1 kolom ipv 3 */
+gap:20px;
+}
+
+.specCard{
+height:300px; /* minder hoog */
+}
+
+
+/* QUOTE SECTION */
+
+.quoteSection{
+flex-direction:column;
+padding:80px 5%;
+}
+
+.quoteLayout{
+flex-direction:column;
+gap:40px;
+}
+
+.quoteImage{
+width:100%;
+right:0; /* reset die side offset */
+}
+
+.quoteWrapper{
+max-width:100%;
+}
+
+
+/* CINEMATICS */
+
+.cinematics{
+padding:120px 0;
+}
+
+.carousel{
+padding-left:5%;
+}
+
+.carousel video{
+width:280px; /* kleiner zodat ze zichtbaar zijn */
+margin-right:15px;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:120px 5%;
+}
+
+.contact h2{
+font-size:32px;
+}
+
+}
+
+@media (max-width: 768px){
+
+header{
+display:none;
+}
+
+.serviceHeroText h1{
+font-size:42px;       /* kleiner */
+line-height:1.2;      /* meer ademruimte */
+word-break:break-word; /* voorkomt afsnijden */
+}
+
+.serviceHeroText{
+padding:0 5%;
+}
+
+.serviceHero{
+height:60vh; /* minder hoog */
+}
+
+}
+
+/* MOBILE NAVBAR ADJUSTMENTS */
+@media (max-width: 768px) {
+  /* Verberg de UL met navigatieknoppen */
+  nav ul {
+    display: none;
+  }
+
+  /* Houd logo zichtbaar en gecentreerd */
+  nav .logo {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  /* Navbar achtergrond en padding aanpassen zodat logo netjes staat */
+  header nav {
+    justify-content: center;
+    padding: 15px 0;
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+/* SCROLL FIX PER SECTIE */
+
+/* Contact - iets naar beneden scrollen zodat titel mooi in beeld staat */
+#contact {
+  scroll-margin-top: 120px;
+}
+
+/* Specialisaties - direct bovenaan scrollen */
+#specialisaties {
+  scroll-margin-top: 30px; /* genoeg zodat de cards volledig zichtbaar zijn, pas aan naar smaak */
+}
+
+.cinematics {
+  padding: 100px 10%;
+  background: black;
+  text-align: center;
+}
+
+.cinematics h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.cinematicGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cinematicItem {
+  width: 300px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cinematicItem video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cinematicItem:hover video {
+  transform: scale(1.05);
+}
