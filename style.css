@@ -99,7 +99,7 @@ nav a:hover {
 
 .logoCutout {
   font-family: 'Cinzel', serif;
-  font-size: 110px;
+  font-size: 120px;
   color: transparent;
   -webkit-text-stroke: 1px white;
 }
@@ -180,6 +180,13 @@ nav a:hover {
 /* individuele lijnen */
 .heroSub span{
   font-size:26px;
+}
+
+.divider{
+  height:60%;
+  width:1px;
+  background:rgba(255,255,255,0.3);
+  display:block;
 }
 
 /* ================= SPECIALISATIES ================= */
@@ -534,4 +541,19 @@ footer {
   text-align: center;
   padding: 40px;
   background: black;
+}
+
+@media (max-width: 768px){
+
+.heroTitle{
+  flex-direction:column;
+  gap:10px;
+}
+
+.heroSub{
+  font-size:14px;
+  letter-spacing:1px;
+  transform:none;
+}
+
 }
