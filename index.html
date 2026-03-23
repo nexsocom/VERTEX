@@ -290,5 +290,20 @@ Mail: sales@nexsocom.com
 
 <script src="script.js"></script>
 
+  <script>
+document.querySelectorAll('.cinematicItem video').forEach(video => {
+
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0; // reset naar begin (optioneel maar cleaner)
+  });
+
+});
+</script>
+  
 </body>
 </html>
