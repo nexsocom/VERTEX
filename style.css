@@ -517,58 +517,22 @@ nav a:hover {
 }
 
 .cinematicItem {
-  position: relative;
-  width: 100%;
-  height: 180px;
-
+  width: 300px;
+  height: 170px;
   overflow: hidden;
-  border-radius: 10px;
-
+  border-radius: 8px;
   cursor: pointer;
-
-  background: black;
-
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .cinematicItem video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  transition: transform 0.6s ease, opacity 0.4s ease;
-}
-
-/* overlay */
-.cinematicItem::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(255,255,255,0.06);
-
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.1)
-  );
-
-  opacity: 0;
-  transition: 0.4s ease;
-}
-
-/* hover */
-.cinematicItem:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  transition: 0.5s;
 }
 
 .cinematicItem:hover video {
-  transform: scale(1.08);
-  opacity: 0.9;
-}
-
-.cinematicItem:hover::after {
-  opacity: 1;
+  transform: scale(1.05);
 }
 
 /* ================= CONTACT ================= */
