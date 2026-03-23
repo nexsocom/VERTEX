@@ -141,6 +141,46 @@ nav a:hover {
   color: white;
 }
 
+.heroTitle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px;
+}
+
+/* rechter blok (| + tekst) */
+.heroRight{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+/* verticale streep */
+.divider{
+  font-size:40px;
+  opacity:0.5;
+}
+
+/* 2-line text block */
+.heroSub{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  font-family:'Inter', sans-serif;
+  font-weight:300;
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+  line-height:1.1;
+
+  opacity:0.75;
+}
+
+/* individuele lijnen */
+.heroSub span{
+  font-size:26px;
+}
 
 /* ================= SPECIALISATIES ================= */
 
