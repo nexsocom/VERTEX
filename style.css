@@ -572,6 +572,33 @@ footer {
 
 @media (max-width: 768px) {
 
+  .serviceHeroText {
+  padding: 0 5%;
+}
+
+.serviceHeroText h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.serviceHeroText p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.serviceContent {
+  padding: 80px 5%;
+}
+
+.serviceText {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.serviceText h2 {
+  font-size: 28px;
+}
+
   /* STOP HORIZONTAAL SCROLLEN */
   html, body {
     overflow-x: hidden;
