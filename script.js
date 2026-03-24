@@ -31,29 +31,6 @@ document.querySelectorAll(".cinematicItem video").forEach(video => {
 
 });
 
-const isMobile = window.innerWidth <= 768;
-
-document.querySelectorAll(".cinematicItem video").forEach(video => {
-
-  video.muted = true;
-
-  if (isMobile) {
-    // MOBILE → altijd spelen
-    video.play().catch(() => {});
-  } else {
-    // DESKTOP → hover gedrag
-    video.addEventListener("mouseenter", () => {
-      video.currentTime = 0;
-      video.play().catch(() => {});
-    });
-
-    video.addEventListener("mouseleave", () => {
-      video.pause();
-      video.currentTime = 0;
-    });
-  }
-
-});
 
 
 // ================= SERVICE PARALLAX =================
